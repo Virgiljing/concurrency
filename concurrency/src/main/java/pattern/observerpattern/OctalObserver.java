@@ -1,0 +1,20 @@
+package pattern.observerpattern;
+
+/**
+ * HexaObserver
+ *
+ * @author virgilin
+ * @date 2019/4/9
+ */
+public class HexaObserver extends Observer {
+
+    public HexaObserver(Subject subject){
+        this.subject = subject;
+        this.subject.attach(this);
+    }
+
+    @Override
+    public void update() {
+
+    }
+}
