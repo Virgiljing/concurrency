@@ -6,5 +6,7 @@ package pattern.createpattern.bstractfactorypattern;
  * @author virgilin
  * @date 2019/3/14
  */
-public class AbstractFactory {
+public abstract class AbstractFactory {
+    public abstract Color getColor(ColorType colorType);
+    public abstract Shape getShape(ShapeType shapeType);
 }

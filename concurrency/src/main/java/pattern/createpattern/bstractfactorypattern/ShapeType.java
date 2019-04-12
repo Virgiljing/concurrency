@@ -1,4 +1,4 @@
-package pattern.createpattern.factorypattern;
+package pattern.createpattern.bstractfactorypattern;
 
 /**
  * 通过枚举类型限定Shape类型

@@ -6,5 +6,7 @@ package pattern.observerpattern;
  * @author virgilin
  * @date 2019/4/9
  */
-public class Observer {
+public abstract class Observer {
+    protected Subject subject;
+    public abstract void update();
 }

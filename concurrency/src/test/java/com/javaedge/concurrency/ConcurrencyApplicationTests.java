@@ -11,6 +11,8 @@ public class ConcurrencyApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
+		new Thread();
 	}
 
 }

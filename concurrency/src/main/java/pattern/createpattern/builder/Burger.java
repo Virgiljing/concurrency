@@ -6,5 +6,10 @@ package pattern.createpattern.builder;
  * @author virgilin
  * @date 2019/3/14
  */
-public class Burger {
+public abstract class Burger implements Item {
+    @Override
+    public Packing packing() {
+        return new Wrapper();
+    }
+
 }

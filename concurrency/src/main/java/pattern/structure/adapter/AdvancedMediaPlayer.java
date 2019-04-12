@@ -6,5 +6,7 @@ package pattern.structure.adapter;
  * @author virgilin
  * @date 2019/3/15
  */
-public class AdvancedMediaPlayer {
+public interface AdvancedMediaPlayer {
+    void playVlc(String fileName);
+    void  playMp4(String fileName);
 }

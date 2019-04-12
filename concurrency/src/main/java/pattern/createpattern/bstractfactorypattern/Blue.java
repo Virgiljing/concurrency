@@ -6,9 +6,9 @@ package pattern.createpattern.bstractfactorypattern;
  * @author virgilin
  * @date 2019/3/14
  */
-public class Green implements Color {
+public class Blue implements Color {
     @Override
     public void fill() {
-        System.out.println("Inside Green::fill() method.");
+        System.out.println("Inside Blue::fill() method.");
     }
 }

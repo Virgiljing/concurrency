@@ -6,5 +6,9 @@ package pattern.createpattern.builder;
  * @author virgilin
  * @date 2019/3/14
  */
-public class Wrapper {
+public class Wrapper implements Packing {
+    @Override
+    public String pack() {
+        return "Wrapper";
+    }
 }

@@ -6,15 +6,16 @@ package pattern.observerpattern;
  * @author virgilin
  * @date 2019/4/9
  */
-public class OctalObserver extends Observer {
+public class BinaryObserver extends Observer {
 
-    public OctalObserver(Subject subject){
+    public BinaryObserver(Subject subject){
         this.subject = subject;
         this.subject.attach(this);
     }
 
     @Override
     public void update() {
-
+        System.out.println( "Binary String: "
+                + Integer.toBinaryString( subject.getState() ) );
     }
 }

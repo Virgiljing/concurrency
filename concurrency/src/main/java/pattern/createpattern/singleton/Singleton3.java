@@ -6,12 +6,19 @@ package pattern.createpattern.singleton;
  * @author virgilin
  * @date 2019/3/14
  */
-public class Singleton2 {
+public class Singleton3 {
 
-    private static Singleton2 instance = new Singleton2();
-    private Singleton2 (){}
-    public static Singleton2 getInstance() {
-        return instance;
+    private volatile static Singleton3 singleton;
+    private Singleton3 (){}
+    public static Singleton3 getSingleton() {
+        if (singleton == null) {
+            synchronized (Singleton3.class) {
+                if (singleton == null) {
+                    singleton = new Singleton3();
+                }
+            }
+        }
+        return singleton;
     }
 
 }

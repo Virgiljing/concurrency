@@ -6,5 +6,6 @@ package pattern.structure.adapter;
  * @author virgilin
  * @date 2019/3/15
  */
-public class MediaPlayer {
+public interface MediaPlayer {
+    void play(AudioType audioType,String fileName);
 }

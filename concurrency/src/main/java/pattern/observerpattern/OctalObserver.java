@@ -6,15 +6,16 @@ package pattern.observerpattern;
  * @author virgilin
  * @date 2019/4/9
  */
-public class HexaObserver extends Observer {
+public class OctalObserver extends Observer {
 
-    public HexaObserver(Subject subject){
+    public OctalObserver(Subject subject){
         this.subject = subject;
         this.subject.attach(this);
     }
 
     @Override
     public void update() {
-
+        System.out.println( "Octal String: "
+                + Integer.toOctalString( subject.getState() ) );
     }
 }
