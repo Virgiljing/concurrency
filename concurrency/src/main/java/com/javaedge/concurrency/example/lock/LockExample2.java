@@ -10,6 +10,12 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * lock锁与synchronized同步锁
+ * lock手动
+ * 手动释放
+ * 灵活性高
+ */
 @Slf4j
 @ThreadSafe
 public class LockExample2 {
